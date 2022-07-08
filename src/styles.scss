@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.normal {
+  @apply bg-stone-200;
+}
+.fire {
+  @apply bg-orange-300;
+}
+.water {
+  @apply bg-blue-200;
+}
+.grass {
+  @apply bg-green-400;
+}
+.electric {
+  @apply bg-yellow-200;
+}
+.ice {
+  @apply bg-cyan-100;
+}
+.fighting {
+  @apply bg-red-800 text-white;
+}
+.poison {
+  @apply bg-purple-700 text-white;
+}
+.ground {
+  @apply bg-yellow-600 text-white;
+}
+.flying {
+  @apply bg-purple-300;
+}
+.psychic {
+  @apply bg-pink-300;
+}
+.bug {
+  @apply bg-lime-300;
+}
+.rock {
+  @apply bg-amber-700 text-white;
+}
+.ghost {
+  @apply bg-violet-100;
+}
+.dark {
+  @apply bg-slate-300;
+}
+.dragon {
+  @apply bg-violet-800 text-white;
+}
+.steel {
+  @apply bg-gray-300;
+}
+.fairy {
+  @apply bg-fuchsia-200;
+}
+body {
+  @apply bg-stone-700 text-white;
+}
+:host {
+  
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

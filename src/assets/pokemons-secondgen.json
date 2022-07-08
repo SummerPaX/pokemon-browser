@@ -1,0 +1,1004 @@
+{
+  "Pokemon": [
+    {
+      "id": 152,
+      "name": "Endivie",
+      "flavour": "Ein süßer Duft geht von dem Blatt auf seinem Kopf aus. Es ist ruhig und liegt gerne in der Sonne.",
+      "types": ["grass"],
+      "dimensions": { "weight": 64.0, "height": 9.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 153,
+      "name": "Lorblatt",
+      "flavour": "Ein würziges Aroma geht von seinen Blättern aus. Das Aroma soll gesundheitsfördernd sein.",
+      "types": ["grass"],
+      "dimensions": { "weight": 158.0, "height": 12.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+      "evolvesFrom": { "id": 152, "name": "Endivie" }
+    },
+    {
+      "id": 154,
+      "name": "Meganie",
+      "flavour": "Das Aroma aus seiner Blüte enthält Stoffe, die jegliche Aggressivität schwinden lassen.",
+      "types": ["grass"],
+      "dimensions": { "weight": 1005.0, "height": 18.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
+      "evolvesFrom": { "id": 153, "name": "Lorblatt" }
+    },
+    {
+      "id": 155,
+      "name": "Feurigel",
+      "flavour": "Es ist ruhig und kugelt sich stets zusammen. Zum Schutz entflammt es seinen Rücken.",
+      "types": ["fire"],
+      "dimensions": { "weight": 79.0, "height": 5.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 156,
+      "name": "Igelavar",
+      "flavour": "Vor dem Kampf dreht es dem Feind den Rücken zu, um ihm zu zeigen, wie Furcht erregend sein Feuer lodert.",
+      "types": ["fire"],
+      "dimensions": { "weight": 190.0, "height": 9.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+      "evolvesFrom": { "id": 155, "name": "Feurigel" }
+    },
+    {
+      "id": 157,
+      "name": "Tornupto",
+      "flavour": "Wenn sein Zorn den Zenit übersteigt, wird es so heiß, dass alles, was es berührt, in Flammen aufgeht.",
+      "types": ["fire"],
+      "dimensions": { "weight": 795.0, "height": 17.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+      "evolvesFrom": { "id": 156, "name": "Igelavar" }
+    },
+    {
+      "id": 158,
+      "name": "Karnimani",
+      "flavour": "Es ist klein, aber zäh und stark. Es zögert nicht, jeden anzugreifen, wenn dieser ihm zu nahe kommt.",
+      "types": ["water"],
+      "dimensions": { "weight": 95.0, "height": 6.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 159,
+      "name": "Tyracroc",
+      "flavour": "Verliert es einen seiner Zähne, wächst ein neuer nach. Es hat immer 48 Zähne in seinem Kiefer.",
+      "types": ["water"],
+      "dimensions": { "weight": 250.0, "height": 11.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+      "evolvesFrom": { "id": 158, "name": "Karnimani" }
+    },
+    {
+      "id": 160,
+      "name": "Impergator",
+      "flavour": "Eigentlich bewegt es sich langsam, doch seine Beute greift es blitzschnell an.",
+      "types": ["water"],
+      "dimensions": { "weight": 888.0, "height": 23.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+      "evolvesFrom": { "id": 159, "name": "Tyracroc" }
+    },
+    {
+      "id": 161,
+      "name": "Wiesor",
+      "flavour": "Wenn es Wache hat, warnt es seine Artgenossen, indem es schreit und mit dem Schwanz auf den Boden schlägt.",
+      "types": ["normal"],
+      "dimensions": { "weight": 60.0, "height": 8.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 162,
+      "name": "Wiesenior",
+      "flavour": "Es rollt sich um seine Jungen, wenn diese schlafen sollen. Gegnern begegnet es mit Schnelligkeit.",
+      "types": ["normal"],
+      "dimensions": { "weight": 325.0, "height": 18.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+      "evolvesFrom": { "id": 161, "name": "Wiesor" }
+    },
+    {
+      "id": 163,
+      "name": "Hoothoot",
+      "flavour": "Sein Zeitgefühl ist perfekt. Was auch immer passiert, es behält den Rhythmus, da sein Kopf wackelt.",
+      "types": ["normal", "flying"],
+      "dimensions": { "weight": 212.0, "height": 7.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 164,
+      "name": "Noctuh",
+      "flavour": "Sein Sehvermögen ist hervorragend. Selbst bei schwachem Licht kann es jedes Detail erkennen.",
+      "types": ["normal", "flying"],
+      "dimensions": { "weight": 408.0, "height": 16.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
+      "evolvesFrom": { "id": 163, "name": "Hoothoot" }
+    },
+    {
+      "id": 165,
+      "name": "Ledyba",
+      "flavour": "Wird es kalt, versammeln sich viele Ledyba von nah und fern, um sich gegenseitig Wärme zu schenken.",
+      "types": ["bug", "flying"],
+      "dimensions": { "weight": 108.0, "height": 10.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 166,
+      "name": "Ledian",
+      "flavour": "Leuchten die Sterne am Nachthimmel, schwirrt es umher und verstreut einen strahlenden, leuchtenden Puder.",
+      "types": ["bug", "flying"],
+      "dimensions": { "weight": 356.0, "height": 14.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+      "evolvesFrom": { "id": 165, "name": "Ledyba" }
+    },
+    {
+      "id": 167,
+      "name": "Webarak",
+      "flavour": "Es spinnt ein Netz aus feinem, aber reißfestem Faden. Dann wartet es auf Beute, die im Netz zappelt.",
+      "types": ["bug", "poison"],
+      "dimensions": { "weight": 85.0, "height": 5.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 168,
+      "name": "Ariados",
+      "flavour": "Da es Fäden sowohl mit dem Hinterleib als auch mit dem Mund spinnt, verwechselt man die beiden leicht.",
+      "types": ["bug", "poison"],
+      "dimensions": { "weight": 335.0, "height": 11.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+      "evolvesFrom": { "id": 167, "name": "Webarak" }
+    },
+    {
+      "id": 169,
+      "name": "Iksbat",
+      "flavour": "Mit seinen vier Flügeln fliegt es so geräuschlos durch die Nacht, dass man es nicht bemerkt.",
+      "types": ["poison", "flying"],
+      "dimensions": { "weight": 750.0, "height": 18.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
+      "evolvesFrom": { "id": 42, "name": null }
+    },
+    {
+      "id": 170,
+      "name": "Lampi",
+      "flavour": "Am Meeresgrund kann es sich nur durch ständiges Flackern seiner Lichter der Umgebung kundtun.",
+      "types": ["water", "electric"],
+      "dimensions": { "weight": 120.0, "height": 5.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 171,
+      "name": "Lanturn",
+      "flavour": "Lanturns Licht kann aus großen Tiefen heraufscheinen. Man nennt es auch \u201ETiefseestern\u201C.",
+      "types": ["water", "electric"],
+      "dimensions": { "weight": 225.0, "height": 12.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+      "evolvesFrom": { "id": 170, "name": "Lampi" }
+    },
+    {
+      "id": 172,
+      "name": "Pichu",
+      "flavour": "Sie spielen miteinander, indem sie ihre Schweifspitzen aneinanderhalten und Funken fliegen lassen.",
+      "types": ["electric"],
+      "dimensions": { "weight": 20.0, "height": 3.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 173,
+      "name": "Pii",
+      "flavour": "Aufgrund seiner ungewöhnlichen Sternform sagt man, es sei auf einem Meteor hierhergereist.",
+      "types": ["fairy"],
+      "dimensions": { "weight": 30.0, "height": 3.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 174,
+      "name": "Fluffeluff",
+      "flavour": "Anstatt mit seinen kurzen Beinen zu laufen, hüpft es mit seinem weichen und kuscheligen Körper.",
+      "types": ["normal", "fairy"],
+      "dimensions": { "weight": 10.0, "height": 3.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 175,
+      "name": "Togepi",
+      "flavour": "Seine Schale ist voll von Freude. Es teilt sein Glück, wenn man es freundlich und gut behandelt.",
+      "types": ["fairy"],
+      "dimensions": { "weight": 15.0, "height": 3.0 },
+      "colour": "white",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 176,
+      "name": "Togetic",
+      "flavour": "Es wird entmutigt, wenn es unter unfreundlichen Menschen ist. Es kann ohne Flügel niedrig schweben.",
+      "types": ["fairy", "flying"],
+      "dimensions": { "weight": 32.0, "height": 6.0 },
+      "colour": "white",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+      "evolvesFrom": { "id": 175, "name": "Togepi" }
+    },
+    {
+      "id": 177,
+      "name": "Natu",
+      "flavour": "Da seine Flügel nicht voll ausgebildet sind, bewegt es sich hüpfend. Es starrt immer etwas an.",
+      "types": ["psychic", "flying"],
+      "dimensions": { "weight": 20.0, "height": 2.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 178,
+      "name": "Xatu",
+      "flavour": "Wenn es bei Sonnenaufgang anfängt zu meditieren, vergeht der ganze Tag, ehe es sich wieder bewegt.",
+      "types": ["psychic", "flying"],
+      "dimensions": { "weight": 150.0, "height": 15.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+      "evolvesFrom": { "id": 177, "name": "Natu" }
+    },
+    {
+      "id": 179,
+      "name": "Voltilamm",
+      "flavour": "Sein weiches Fell wird doppelt so dick, wenn sich Elektrizität aufbaut.",
+      "types": ["electric"],
+      "dimensions": { "weight": 78.0, "height": 6.0 },
+      "colour": "white",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 180,
+      "name": "Waaty",
+      "flavour": "Sein flauschiges Fell speichert Elektrizität. Seine Gummihaut schützt es vor Stromstößen.",
+      "types": ["electric"],
+      "dimensions": { "weight": 133.0, "height": 8.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+      "evolvesFrom": { "id": 179, "name": "Voltilamm" }
+    },
+    {
+      "id": 181,
+      "name": "Ampharos",
+      "flavour": "Seine Schweifspitze ist so hell, dass viele Verschollene es als Orientierungspunkt nutzen.",
+      "types": ["electric"],
+      "dimensions": { "weight": 615.0, "height": 14.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+      "evolvesFrom": { "id": 180, "name": "Waaty" }
+    },
+    {
+      "id": 182,
+      "name": "Blubella",
+      "flavour": "Blubella kommen zusammen, um zu tanzen. Man sagt, dieser Tanz sei ein Ritual, um der Sonne zu huldigen.",
+      "types": ["grass"],
+      "dimensions": { "weight": 58.0, "height": 4.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+      "evolvesFrom": { "id": 44, "name": null }
+    },
+    {
+      "id": 183,
+      "name": "Marill",
+      "flavour": "Sein Fell ist von Natur aus wasserabweisend. Es bleibt trocken, auch wenn es im Wasser spielt.",
+      "types": ["water", "fairy"],
+      "dimensions": { "weight": 85.0, "height": 4.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+      "evolvesFrom": { "id": 298, "name": null }
+    },
+    {
+      "id": 184,
+      "name": "Azumarill",
+      "flavour": "Seine langen Ohren sind hervorragende Sensoren. Mit ihnen kann es Bewegungen im Fluss wahrnehmen.",
+      "types": ["water", "fairy"],
+      "dimensions": { "weight": 285.0, "height": 8.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+      "evolvesFrom": { "id": 183, "name": "Marill" }
+    },
+    {
+      "id": 185,
+      "name": "Mogelbaum",
+      "flavour": "Obwohl es vorgibt, ein Baum zu sein, kommt seine Zusammensetzung einem Stein näher als einer Pflanze.",
+      "types": ["rock"],
+      "dimensions": { "weight": 380.0, "height": 12.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+      "evolvesFrom": { "id": 438, "name": null }
+    },
+    {
+      "id": 186,
+      "name": "Quaxo",
+      "flavour": "Sind drei oder mehr von ihnen zusammen, lassen sie einen schallenden Ruf erklingen.",
+      "types": ["water"],
+      "dimensions": { "weight": 339.0, "height": 11.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+      "evolvesFrom": { "id": 61, "name": null }
+    },
+    {
+      "id": 187,
+      "name": "Hoppspross",
+      "flavour": "Sein Körper ist so leicht, dass es seine Füße im Boden verankert, damit es nicht davongeweht wird.",
+      "types": ["grass", "flying"],
+      "dimensions": { "weight": 5.0, "height": 4.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 188,
+      "name": "Hubelupf",
+      "flavour": "Temperaturschwankungen veranlassen es, die Blüte auf seinem Kopf immer zu öffnen oder zu schließen.",
+      "types": ["grass", "flying"],
+      "dimensions": { "weight": 10.0, "height": 6.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+      "evolvesFrom": { "id": 187, "name": "Hoppspross" }
+    },
+    {
+      "id": 189,
+      "name": "Papungha",
+      "flavour": "Es lässt sich von den Winden um den Globus tragen und verteilt auf seinem Flug Baumwollsamen.",
+      "types": ["grass", "flying"],
+      "dimensions": { "weight": 30.0, "height": 8.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+      "evolvesFrom": { "id": 188, "name": "Hubelupf" }
+    },
+    {
+      "id": 190,
+      "name": "Griffel",
+      "flavour": "Es lebt in den Kronen großer Bäume. Es hüpft von Ast zu Ast und balanciert mit seinem Schweif.",
+      "types": ["normal"],
+      "dimensions": { "weight": 115.0, "height": 8.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 191,
+      "name": "Sonnkern",
+      "flavour": "Manchmal fällt es plötzlich vom Himmel. Wird es von Habitak angegriffen, schüttelt es seine Blätter.",
+      "types": ["grass"],
+      "dimensions": { "weight": 18.0, "height": 3.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 192,
+      "name": "Sonnflora",
+      "flavour": "Steht der Sommer bevor, werden die Blätter um das Gesicht dieses Pokémon aktiv und lebhaft.",
+      "types": ["grass"],
+      "dimensions": { "weight": 85.0, "height": 8.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+      "evolvesFrom": { "id": 191, "name": "Sonnkern" }
+    },
+    {
+      "id": 193,
+      "name": "Yanma",
+      "flavour": "Mit seinen Augen hat es einen Blickwinkel von 360 Grad. Es sieht sogar Beute, die sich hinter ihm befindet.",
+      "types": ["bug", "flying"],
+      "dimensions": { "weight": 380.0, "height": 12.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 194,
+      "name": "Felino",
+      "flavour": "Dieses Pokémon lebt in Eiswasser. Wird es an Land kalt, verlässt es das Wasser und sucht nach Futter.",
+      "types": ["water", "ground"],
+      "dimensions": { "weight": 85.0, "height": 4.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 195,
+      "name": "Morlord",
+      "flavour": "Ein träges Pokémon, das auf dem Grund des Flusses liegt und wartet, dass ihm Beute ins Maul schwimmt.",
+      "types": ["water", "ground"],
+      "dimensions": { "weight": 750.0, "height": 14.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+      "evolvesFrom": { "id": 194, "name": "Felino" }
+    },
+    {
+      "id": 196,
+      "name": "Psiana",
+      "flavour": "Die Spitze seines geteilten Schweifs bebt, wenn es die nächste Attacke seines Feindes voraussagt.",
+      "types": ["psychic"],
+      "dimensions": { "weight": 265.0, "height": 9.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+      "evolvesFrom": { "id": 133, "name": null }
+    },
+    {
+      "id": 197,
+      "name": "Nachtara",
+      "flavour": "Mondlicht hat die genetische Struktur von Evoli verändert. Im Dunkeln wartet es auf Beute.",
+      "types": ["dark"],
+      "dimensions": { "weight": 270.0, "height": 10.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+      "evolvesFrom": { "id": 133, "name": null }
+    },
+    {
+      "id": 198,
+      "name": "Kramurx",
+      "flavour": "Es versteckt jeden schimmernden Gegenstand. Kramurx und Mauzi rauben sich gegenseitig die Beute.",
+      "types": ["dark", "flying"],
+      "dimensions": { "weight": 21.0, "height": 5.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 199,
+      "name": "Laschoking",
+      "flavour": "Sein feines Gespür und Intellekt zeichnen es aus. Es bleibt in jeder Situation gelassen und besonnen.",
+      "types": ["water", "psychic"],
+      "dimensions": { "weight": 795.0, "height": 20.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+      "evolvesFrom": { "id": 79, "name": null }
+    },
+    {
+      "id": 200,
+      "name": "Traunfugil",
+      "flavour": "Es nährt sich von der Angst anderer Wesen und nimmt diese in roten Kugeln auf. Schläft am Tage.",
+      "types": ["ghost"],
+      "dimensions": { "weight": 10.0, "height": 7.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 201,
+      "name": "Icognito",
+      "flavour": "Sein flacher, dünner Körper hängt immer an Wänden. Seine Form scheint eine Bedeutung zu haben.",
+      "types": ["psychic"],
+      "dimensions": { "weight": 50.0, "height": 5.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 202,
+      "name": "Woingenau",
+      "flavour": "Es hasst Licht und Schläge. Wird es angegriffen, pumpt es sich auf, um einen Gegenschlag vorzubereiten.",
+      "types": ["psychic"],
+      "dimensions": { "weight": 285.0, "height": 13.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+      "evolvesFrom": { "id": 360, "name": null }
+    },
+    {
+      "id": 203,
+      "name": "Girafarig",
+      "flavour": "Während es schläft, hält sein Schweif Wache. Dieser benötigt keinen Schlaf.",
+      "types": ["normal", "psychic"],
+      "dimensions": { "weight": 415.0, "height": 15.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 204,
+      "name": "Tannza",
+      "flavour": "Es fügt seiner Schale schichtenweise Baumrinde hinzu. Die zusätzliche Belastung ist ihm gleich.",
+      "types": ["bug"],
+      "dimensions": { "weight": 72.0, "height": 6.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 205,
+      "name": "Forstellka",
+      "flavour": "Dieses Pokémon ist von einer Stahlhülle umgeben. Seine stechenden Augen sind alles, was man von ihm sieht.",
+      "types": ["bug", "steel"],
+      "dimensions": { "weight": 1258.0, "height": 12.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+      "evolvesFrom": { "id": 204, "name": "Tannza" }
+    },
+    {
+      "id": 206,
+      "name": "Dummisel",
+      "flavour": "Wird es entdeckt, flüchtet dieses Pokémon, indem es sich mit seinem Schweif in den Boden gräbt.",
+      "types": ["normal"],
+      "dimensions": { "weight": 140.0, "height": 15.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 207,
+      "name": "Skorgla",
+      "flavour": "Es hängt meist an Klippen. Erspäht es Beute, spreizt es seine Flügel und greift diese sofort an.",
+      "types": ["ground", "flying"],
+      "dimensions": { "weight": 648.0, "height": 11.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 208,
+      "name": "Stahlos",
+      "flavour": "Hoher Druck und hohe Temperaturen haben seinen Körper härter als Stahl werden lassen.",
+      "types": ["steel", "ground"],
+      "dimensions": { "weight": 4000.0, "height": 92.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+      "evolvesFrom": { "id": 95, "name": null }
+    },
+    {
+      "id": 209,
+      "name": "Snubbull",
+      "flavour": "Es ist von Natur aus verspielt. Es tollt mit vielen Frauen herum, da es ihnen zugeneigt ist.",
+      "types": ["fairy"],
+      "dimensions": { "weight": 78.0, "height": 6.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 210,
+      "name": "Granbull",
+      "flavour": "Es ist trotz seines Äußeren schüchtern. Wird es wütend, schnappt es mit seinen Fängen zu.",
+      "types": ["fairy"],
+      "dimensions": { "weight": 487.0, "height": 14.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+      "evolvesFrom": { "id": 209, "name": "Snubbull" }
+    },
+    {
+      "id": 211,
+      "name": "Baldorfish",
+      "flavour": "Um seine Giftstacheln abzufeuern, muss es seinen Körper aufpumpen, indem es 10 l trinkt.",
+      "types": ["water", "poison"],
+      "dimensions": { "weight": 39.0, "height": 5.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 212,
+      "name": "Scherox",
+      "flavour": "Dieses Pokémon kann mit seinen stählernen Scheren jeden harten Gegenstand mühelos zermalmen.",
+      "types": ["bug", "steel"],
+      "dimensions": { "weight": 1180.0, "height": 18.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+      "evolvesFrom": { "id": 123, "name": null }
+    },
+    {
+      "id": 213,
+      "name": "Pottrott",
+      "flavour": "In seinem topfförmigen Panzer gelagerte Beeren verwandeln sich im Nu zu einem dickflüssigen Saft.",
+      "types": ["bug", "rock"],
+      "dimensions": { "weight": 205.0, "height": 6.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 214,
+      "name": "Skaraborn",
+      "flavour": "Dieses kräftige Pokémon rammt sein stolzes Horn unter den Rumpf des Gegners und wirft ihn um.",
+      "types": ["bug", "fighting"],
+      "dimensions": { "weight": 540.0, "height": 15.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 215,
+      "name": "Sniebel",
+      "flavour": "Es ernährt sich von Eiern, die es aus Nestern stiehlt. Beute greift es mit seinen scharfen Krallen an.",
+      "types": ["dark", "ice"],
+      "dimensions": { "weight": 280.0, "height": 9.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 216,
+      "name": "Teddiursa",
+      "flavour": "Findet es Honig, leuchtet die Sichel auf seinem Kopf. Es leckt oft seine mit Honig bedeckten Pfoten.",
+      "types": ["normal"],
+      "dimensions": { "weight": 88.0, "height": 6.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 217,
+      "name": "Ursaring",
+      "flavour": "Da es alle Gerüche perfekt unterscheiden kann, findet es sogar Nahrung, die tief im Erdreich ist.",
+      "types": ["normal"],
+      "dimensions": { "weight": 1258.0, "height": 18.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+      "evolvesFrom": { "id": 216, "name": "Teddiursa" }
+    },
+    {
+      "id": 218,
+      "name": "Schneckmag",
+      "flavour": "Es hält sich ständig bei Vulkanen auf und ist stets kriechend auf der Suche nach warmen Aufenthaltsorten.",
+      "types": ["fire"],
+      "dimensions": { "weight": 350.0, "height": 7.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 219,
+      "name": "Magcargo",
+      "flavour": "Aus seinem porösen Schneckengehäuse sprudeln Feuerfontänen, die seinen Körper durchfluten.",
+      "types": ["fire", "rock"],
+      "dimensions": { "weight": 550.0, "height": 8.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+      "evolvesFrom": { "id": 218, "name": "Schneckmag" }
+    },
+    {
+      "id": 220,
+      "name": "Quiekel",
+      "flavour": "Auf Nahrungssuche schnüffelt es am Boden entlang. Es entdeckt dabei manchmal auch heiße Quellen.",
+      "types": ["ice", "ground"],
+      "dimensions": { "weight": 65.0, "height": 4.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 221,
+      "name": "Keifel",
+      "flavour": "Trotz kurzer Beine rutscht es auf eisigen Flächen nicht aus, da seine Hufe ihm genügend Halt bieten.",
+      "types": ["ice", "ground"],
+      "dimensions": { "weight": 558.0, "height": 11.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+      "evolvesFrom": { "id": 220, "name": "Quiekel" }
+    },
+    {
+      "id": 222,
+      "name": "Corasonn",
+      "flavour": "Es häutet sich ständig und wächst. Seine Kopfspitze wurde als Schatz der Schönheit ausgezeichnet.",
+      "types": ["water", "rock"],
+      "dimensions": { "weight": 50.0, "height": 6.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 223,
+      "name": "Remoraid",
+      "flavour": "Es ist äußerst präzise. Es kann mit seinem Wasserschuss Beute erlegen, die 100 m entfernt ist.",
+      "types": ["water"],
+      "dimensions": { "weight": 120.0, "height": 6.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 224,
+      "name": "Octillery",
+      "flavour": "Es verkriecht sich gerne in Löchern, von wo aus es Gegner mit Tinte beschießt. Es bevorzugt Felsspalten und Vasen.",
+      "types": ["water"],
+      "dimensions": { "weight": 285.0, "height": 9.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+      "evolvesFrom": { "id": 223, "name": "Remoraid" }
+    },
+    {
+      "id": 225,
+      "name": "Botogel",
+      "flavour": "Im eingerollten Schweif transportiert es Futter, das es mit denen teilt, die sich verlaufen haben.",
+      "types": ["ice", "flying"],
+      "dimensions": { "weight": 160.0, "height": 9.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 226,
+      "name": "Mantax",
+      "flavour": "Schwimmt es schnell genug, kann es über die Wellen springen und bis zu 100 m durch die Lüfte gleiten.",
+      "types": ["water", "flying"],
+      "dimensions": { "weight": 2200.0, "height": 21.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+      "evolvesFrom": { "id": 458, "name": null }
+    },
+    {
+      "id": 227,
+      "name": "Panzaeron",
+      "flavour": "Die dornigen Zweige seines Nests bewirken, dass die Flügel seiner Jungen fest und hart werden.",
+      "types": ["steel", "flying"],
+      "dimensions": { "weight": 505.0, "height": 17.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 228,
+      "name": "Hunduster",
+      "flavour": "Im Morgengrauen schallt sein ominöses Geheule über das Gebiet, das es für sich beansprucht.",
+      "types": ["dark", "fire"],
+      "dimensions": { "weight": 108.0, "height": 6.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 229,
+      "name": "Hundemon",
+      "flavour": "In alten Zeiten glaubte man, das Heulen dieses Pokémon sei der Ruf des Todes.",
+      "types": ["dark", "fire"],
+      "dimensions": { "weight": 350.0, "height": 14.0 },
+      "colour": "black",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+      "evolvesFrom": { "id": 228, "name": "Hunduster" }
+    },
+    {
+      "id": 230,
+      "name": "Seedraking",
+      "flavour": "Man sagt, es hause in Unterwasserhöhlen. Es kann mächtige Strudel generieren, wenn es gähnt.",
+      "types": ["water", "dragon"],
+      "dimensions": { "weight": 1520.0, "height": 18.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
+      "evolvesFrom": { "id": 117, "name": null }
+    },
+    {
+      "id": 231,
+      "name": "Phanpy",
+      "flavour": "Als Zeichen seiner Zuneigung stupst es dich mit dem Rüssel, was dich aber buchstäblich umwerfen könnte.",
+      "types": ["ground"],
+      "dimensions": { "weight": 335.0, "height": 5.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 232,
+      "name": "Donphan",
+      "flavour": "Aufgrund seiner scharfen Stoßzähne und seiner rauen Haut könnte es mit Tackle ein Haus niederreißen.",
+      "types": ["ground"],
+      "dimensions": { "weight": 1200.0, "height": 11.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+      "evolvesFrom": { "id": 231, "name": "Phanpy" }
+    },
+    {
+      "id": 233,
+      "name": "Porygon2",
+      "flavour": "Seine Fähigkeiten wurden verbessert. Es zeigt manchmal sogar Handlungen, die nicht einprogrammiert sind.",
+      "types": ["normal"],
+      "dimensions": { "weight": 325.0, "height": 6.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
+      "evolvesFrom": { "id": 137, "name": null }
+    },
+    {
+      "id": 234,
+      "name": "Damhirplex",
+      "flavour": "Starrt man auf sein Geweih, bekommt man das seltsame Gefühl, in dessen Mitte gezogen zu werden.",
+      "types": ["normal"],
+      "dimensions": { "weight": 712.0, "height": 14.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 235,
+      "name": "Farbeagle",
+      "flavour": "Sein Revier markiert es mit seinem pinselartigen Schweif. Es kennt mehr als 5 000 Markierungen.",
+      "types": ["normal"],
+      "dimensions": { "weight": 580.0, "height": 12.0 },
+      "colour": "white",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 236,
+      "name": "Rabauz",
+      "flavour": "Es strotzt vor Energie. Um noch stärker zu werden, kämpft es weiter, auch wenn es verloren hat.",
+      "types": ["fighting"],
+      "dimensions": { "weight": 210.0, "height": 7.0 },
+      "colour": "purple",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 237,
+      "name": "Kapoera",
+      "flavour": "Es kämpft, während es sich wie ein Kreisel dreht. Die Zentrifugalkraft verzehnfacht seine Kampfkraft.",
+      "types": ["fighting"],
+      "dimensions": { "weight": 480.0, "height": 14.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+      "evolvesFrom": { "id": 236, "name": "Rabauz" }
+    },
+    {
+      "id": 238,
+      "name": "Kussilla",
+      "flavour": "Die Lippen sind sein empfindlichster Körperteil. Neue Dinge untersucht es zuerst damit.",
+      "types": ["ice", "psychic"],
+      "dimensions": { "weight": 60.0, "height": 4.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 239,
+      "name": "Elekid",
+      "flavour": "Es bewegt seine Arme und generiert damit Elektrizität. Diese kann es aber nicht speichern.",
+      "types": ["electric"],
+      "dimensions": { "weight": 235.0, "height": 6.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 240,
+      "name": "Magby",
+      "flavour": "Seine Körpertemperatur misst 600 °C. Beim Ein- und Ausatmen springen glühende Kohlenstücke aus seinem Mund.",
+      "types": ["fire"],
+      "dimensions": { "weight": 214.0, "height": 7.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 241,
+      "name": "Miltank",
+      "flavour": "Wenn es gerade ein Junges hat, dann enthält seine Milch mehr Nährstoffe als gewöhnlich.",
+      "types": ["normal"],
+      "dimensions": { "weight": 755.0, "height": 12.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 242,
+      "name": "Heiteira",
+      "flavour": "Eier, die es legt, stecken voller Fröhlichkeit. Schon ein Bissen erzeugt ein breites Lächeln.",
+      "types": ["normal"],
+      "dimensions": { "weight": 468.0, "height": 15.0 },
+      "colour": "pink",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+      "evolvesFrom": { "id": 113, "name": null }
+    },
+    {
+      "id": 243,
+      "name": "Raikou",
+      "flavour": "Die Regenwolken, die es trägt, ermöglichen es ihm, Gewitter zu erzeugen. Es strotzt vor Blitzen.",
+      "types": ["electric"],
+      "dimensions": { "weight": 1780.0, "height": 19.0 },
+      "colour": "yellow",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 244,
+      "name": "Entei",
+      "flavour": "Dieses Pokémon jagt über das Land. Man sagt, in jedem neuen Vulkan wird ein Entei geboren.",
+      "types": ["fire"],
+      "dimensions": { "weight": 1980.0, "height": 21.0 },
+      "colour": "brown",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 245,
+      "name": "Suicune",
+      "flavour": "Es wandert beständig in der Welt herum, um verunreinigtes Wasser zu reinigen. Es zieht mit dem Nordwind.",
+      "types": ["water"],
+      "dimensions": { "weight": 1870.0, "height": 20.0 },
+      "colour": "blue",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 246,
+      "name": "Larvitar",
+      "flavour": "Es ernährt sich von Erde. Nachdem es einen Berg verspeist hat, schläft es ein, um zu wachsen.",
+      "types": ["rock", "ground"],
+      "dimensions": { "weight": 720.0, "height": 6.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 247,
+      "name": "Pupitar",
+      "flavour": "Sein Körper ist hart wie Fels. Es lässt mit Hochdruck Gas ab, um wie eine Rakete nach oben zu schießen.",
+      "types": ["rock", "ground"],
+      "dimensions": { "weight": 1520.0, "height": 12.0 },
+      "colour": "gray",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+      "evolvesFrom": { "id": 246, "name": "Larvitar" }
+    },
+    {
+      "id": 248,
+      "name": "Despotar",
+      "flavour": "Es besitzt so viel Kraft, dass es mit nur einer Hand die Erde beben lassen und Berge zerbröckeln kann.",
+      "types": ["rock", "dark"],
+      "dimensions": { "weight": 2020.0, "height": 20.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+      "evolvesFrom": { "id": 247, "name": "Pupitar" }
+    },
+    {
+      "id": 249,
+      "name": "Lugia",
+      "flavour": "Es schläft in einem Tiefseegraben. Schwingt es seine Flügel, entsteht ein Sturm, der 40 Tage dauert.",
+      "types": ["psychic", "flying"],
+      "dimensions": { "weight": 2160.0, "height": 52.0 },
+      "colour": "white",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 250,
+      "name": "Ho-Oh",
+      "flavour": "Sein Körper soll in sieben Farben leuchten. Im Flug zieht es einen Regenbogen hinter sich her.",
+      "types": ["fire", "flying"],
+      "dimensions": { "weight": 1990.0, "height": 38.0 },
+      "colour": "red",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    },
+    {
+      "id": 251,
+      "name": "Celebi",
+      "flavour": "Dieses Pokémon reist durch Zeit und Raum. Bäume und Wiesen wuchern, wenn es in der Nähe ist.",
+      "types": ["psychic", "grass"],
+      "dimensions": { "weight": 50.0, "height": 6.0 },
+      "colour": "green",
+      "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+      "evolvesFrom": { "id": 0, "name": null }
+    }
+  ]
+}
