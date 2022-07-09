@@ -16,7 +16,7 @@ export class PokemonService {
   getPokemons() {
     let params: HttpParams = new HttpParams()
       .set('offset', 241)
-      .append('limit', 5);
+      .append('limit', 151);
     console.log(this.API_ROOT + '/pokemon', { params });
     this.pokemonResponse = this.http.get<PokemonRexponse>(
       this.API_ROOT + '/pokemon',

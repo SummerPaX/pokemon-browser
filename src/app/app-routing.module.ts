@@ -7,6 +7,7 @@ import { ViewSecondgenComponent } from './view-secondgen/view-secondgen.componen
 const routes: Routes = [
   { path: 'first', component: ViewFirstgenComponent },
   { path: 'second', component: ViewSecondgenComponent },
+  { path: '', component: ViewFirstgenComponent },
   { path: '**', component: ViewNotfoundComponent },
 ];
 

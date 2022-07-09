@@ -16,10 +16,15 @@ import {
 @Component({
   selector: 'app-view-firstgen',
   template: `
-    <div class="flex justify-center w-full">
+    <div class="absolute left-2 top-2">
+      <button mat-mini-fab>
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <div class="flex justify-around w-full my-2">
       <input
         [(ngModel)]="searchstring"
-        class="w-2/3 bg-stone-800 ring- ring-black rounded-full text-center mb-2 p-1"
+        class="max-w-2lg w-[550px] bg-stone-800 shadow-sm rounded-full text-center p-1"
         placeholder="Search..."
         (ngModelChange)="inputchanged()"
       />
@@ -40,7 +45,7 @@ import {
     trigger('pageAnimations', [
       transition(':enter', [
         query('app-pokemoncard', [
-          style({ opacity: 0, transform: 'translateX(-100px)' }),
+          style({ opacity: 0 }),
           stagger('3000ms', [
             animate(
               '2s cubic-bezier(0.35, 0, 0.25, 1)',
