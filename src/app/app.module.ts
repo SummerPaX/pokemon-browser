@@ -11,22 +11,26 @@ import { ViewNotfoundComponent } from './view-notfound/view-notfound.component';
 import { FormsModule } from '@angular/forms';
 import { ViewThirdgenComponent } from './view-thirdgen/view-thirdgen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from "@angular/common/http";
+import { HttpClientModule } from '@angular/common/http';
 import { SpeciesPipe } from './species.pipe';
-import {MatCardModule} from '@angular/material/card';
-import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
-
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatListModule } from '@angular/material/list';
+import { SimplepokemoncardComponent } from './simplepokemoncard/simplepokemoncard.component';
+import { MatMenuModule } from '@angular/material/menu';
 @NgModule({
   declarations: [
     AppComponent,
     PokemoncardComponent,
+    SimplepokemoncardComponent,
     NavbarComponent,
     ViewFirstgenComponent,
     ViewSecondgenComponent,
     ViewNotfoundComponent,
     ViewThirdgenComponent,
-    SpeciesPipe
+    SpeciesPipe,
   ],
   imports: [
     BrowserModule,
@@ -36,10 +40,12 @@ import {MatButtonModule} from '@angular/material/button';
     HttpClientModule,
     MatCardModule,
     MatIconModule,
-    MatButtonModule
-    
+    MatButtonModule,
+    MatSidenavModule,
+    MatListModule,
+    MatMenuModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

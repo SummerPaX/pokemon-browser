@@ -57,17 +57,50 @@
 .fairy {
   @apply bg-fuchsia-200;
 }
+
 body {
-  @apply bg-stone-700 text-white;
+  @apply bg-white dark:bg-neutral-800 scroll-ff scroll-smooth;
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-:host {  
+
+.scroll-ff {
+  scrollbar-face-color: rgb(22, 163, 74); /* Firefox 63 compatibility */
+  scrollbar-track-color: rgb(229, 229, 229); /* Firefox 63 compatibility */
+  scrollbar-color: rgb(22, 163, 74) rgb(229, 229, 229);
+}
+
+@media (prefers-color-scheme: dark) {
+  .scroll-ff {
+    scrollbar-track-color: rgb(82, 82, 82); /* Firefox 63 compatibility */
+    scrollbar-color: rgb(22, 163, 74) rgb(82, 82, 82);
+  }
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  @apply bg-neutral-200 dark:bg-neutral-600;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-indigo-500 ;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  @apply bg-indigo-600;
+}
+
+:host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
+
   font-size: 14px;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,33 +1,31 @@
 <div
-      *ngIf="pokemon && (!filter || isFiltered())"
-      class="flex justify-center w-max"
-    >
-      <mat-card class="example-card mb-1 w-max">
-        <mat-card-title-group>
-          <mat-card-title *ngIf="species">
-            {{ species | species: 'name':'de' }}
-          </mat-card-title>
-          <mat-card-subtitle
-            *ngIf="species"
-            class="w-96 h-full flex items-center"
+  *ngIf="pokemon && (!filter || isFiltered())"
+  class="flex justify-center w-max"
+>
+  <mat-card class="example-card mb-1 w-max">
+    <mat-card-title-group>
+      <mat-card-title *ngIf="species">
+        #{{ pokemonEntry.entry_number }}
+        {{ species | species: "name":(lang || 'de') }}
+      </mat-card-title>
+      <mat-card-subtitle *ngIf="species" class="w-[600px] h-full flex items-center mr-2">
+        <span>{{ species | species: "flavour":(lang || 'de') }}</span>
+        <div class="mt-4 w-full">
+          <span
+            class="px-2 py-1 mr-1 font-medium bg-stone-200 rounded text-black"
+            *ngFor="let type of pokemon.types"
+            [ngClass]="type.type.name"
           >
-            <span>{{ species | species: 'flavour':'de' }}</span>
-            <div class="mt-4 w-full">
-              <span
-                class="px-2 py-1 mr-1 font-medium  bg-stone-200 rounded text-black"
-                *ngFor="let type of pokemon.types"
-                [ngClass]="type.type.name"
-              >
-                {{ type.type.name }}
-              </span>
-            </div>
-          </mat-card-subtitle>
-          <img
-            mat-card-md-image
-            class="rounded"
-            [class]="pokemon.types[0].type.name"
-            [src]="pokemon.sprites.front_default"
-          />
-        </mat-card-title-group>
-      </mat-card>
-    </div>
+            {{ type.type.name }}
+          </span>
+        </div>
+      </mat-card-subtitle>
+      <img
+        mat-card-md-image
+        class="rounded"
+        [class]="pokemon.types[0].type.name"
+        [src]="pokemon.sprites.front_default"
+      />
+    </mat-card-title-group>
+  </mat-card>
+</div>

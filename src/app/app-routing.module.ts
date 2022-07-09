@@ -5,9 +5,8 @@ import { ViewNotfoundComponent } from './view-notfound/view-notfound.component';
 import { ViewSecondgenComponent } from './view-secondgen/view-secondgen.component';
 
 const routes: Routes = [
-  { path: 'first', component: ViewFirstgenComponent },
-  { path: 'second', component: ViewSecondgenComponent },
-  { path: '', component: ViewFirstgenComponent },
+  { path: 'pokedex/:id', component: ViewFirstgenComponent },
+  { path: '', component: ViewSecondgenComponent },
   { path: '**', component: ViewNotfoundComponent },
 ];
 

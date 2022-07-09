@@ -16,7 +16,7 @@ export class SpeciesPipe implements PipeTransform {
         return (
           value.flavor_text_entries.find(
             (entry) => entry.language.name === lang
-          )?.flavor_text ?? ''
+          )?.flavor_text.replace('\f',' ') ?? ''
         );
 
       case 'name':
