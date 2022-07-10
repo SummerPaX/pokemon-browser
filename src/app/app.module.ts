@@ -9,7 +9,6 @@ import { ViewFirstgenComponent } from './view-firstgen/view-firstgen.component';
 import { ViewSecondgenComponent } from './view-secondgen/view-secondgen.component';
 import { ViewNotfoundComponent } from './view-notfound/view-notfound.component';
 import { FormsModule } from '@angular/forms';
-import { ViewThirdgenComponent } from './view-thirdgen/view-thirdgen.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { SpeciesPipe } from './species.pipe';
@@ -29,7 +28,6 @@ import { MatMenuModule } from '@angular/material/menu';
     ViewFirstgenComponent,
     ViewSecondgenComponent,
     ViewNotfoundComponent,
-    ViewThirdgenComponent,
     SpeciesPipe,
   ],
   imports: [

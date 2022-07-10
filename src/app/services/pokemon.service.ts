@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable, concat, combineLatest, of, Subject, pluck } from 'rxjs';
+import { Observable, pluck } from 'rxjs';
 import {
   NamedAPIResource,
   Pokedex,

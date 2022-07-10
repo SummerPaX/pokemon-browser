@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { PokemonService } from '../services/pokemon.service';
-import { Observable, switchMap, pluck, map, find } from 'rxjs';
+import { Observable, pluck } from 'rxjs';
 import {
   NamedAPIResource,
   Pokedex,
@@ -22,11 +22,13 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
   selector: 'app-view-firstgen',
   template: `
     <div class="flex justify-center w-full my-2 sticky top-1 z-10">
-      <button mat-icon-button [matMenuTriggerFor]="menu"><mat-icon>translate</mat-icon></button>
+      <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>translate</mat-icon>
+      </button>
       <mat-menu #menu="matMenu">
         <button mat-menu-item (click)="setLang('de')">Deutsch</button>
         <button mat-menu-item (click)="setLang('en')">English</button>
-        <button mat-menu-item (click)="setLang('ja')">日本語</button>     
+        <button mat-menu-item (click)="setLang('ja')">日本語</button>
         <button mat-menu-item (click)="setLang('ja-Hrkt')">Japanese</button>
         <button mat-menu-item (click)="setLang('roomaji')">Romaji</button>
         <button mat-menu-item (click)="setLang('ko')">Korean</button>
@@ -75,7 +77,7 @@ import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 })
 export class ViewFirstgenComponent implements OnInit {
   @Input() pokedexRes: NamedAPIResource;
-  lang = 'de'
+  lang = 'de';
 
   simplecards = true;
   constructor(
@@ -111,7 +113,7 @@ export class ViewFirstgenComponent implements OnInit {
       });
     });
   }
-  setLang(lang: string){
+  setLang(lang: string) {
     this.lang = lang;
   }
 }

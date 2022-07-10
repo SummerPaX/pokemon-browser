@@ -1,7 +1,4 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { Observable, pluck } from 'rxjs';
-import { NamedAPIResource } from 'src/models';
-import { PokedexResponse } from 'src/types/pokemon-response';
 import { PokemonService } from '../services/pokemon.service';
 
 @Component({

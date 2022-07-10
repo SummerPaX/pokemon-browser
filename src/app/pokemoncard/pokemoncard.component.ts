@@ -1,10 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Observable, Observer, timer } from 'rxjs';
+import { timer } from 'rxjs';
 import {
   Pokemon,
   PokemonEntry,
   PokemonSpecies,
-  PokemonType,
 } from '../../models/index';
 import { PokemonService } from '../services/pokemon.service';
 
