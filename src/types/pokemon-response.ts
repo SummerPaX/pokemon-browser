@@ -1,6 +1,6 @@
 import { NamedAPIResource } from '../models/Common';
 
-export interface PokemonRexponse {
+export interface PokemonResponse {
     count: number,
     next: string,
     previous: string,
