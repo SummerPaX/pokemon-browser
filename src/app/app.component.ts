@@ -21,5 +21,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   constructor() {}
 
-  title = 'pokemon-browser';
+  title = 'species-browser';
 }

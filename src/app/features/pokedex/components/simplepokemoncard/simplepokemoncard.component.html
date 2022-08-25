@@ -2,7 +2,7 @@
   <mat-card class="">
     <mat-card-header>
       <mat-card-title *ngIf="species">
-        #{{ pokemonEntry.entry_number }}
+        #{{ species.id }}
         {{ species | species: "name":lang || "de" }}</mat-card-title
       >
     </mat-card-header>
@@ -12,7 +12,7 @@
       style="margin: 0 auto 0.5rem"
       [class]="pokemon.types[0].type.name"
       [src]="pokemon.sprites.front_default"
-    />
+      [alt]="species.id"/>
     <mat-card-content [class]="lang == 'en' ? ' h-24' : 'h-16'">
       <span>{{ species | species: "flavour":lang || "de" }}</span>
     </mat-card-content>

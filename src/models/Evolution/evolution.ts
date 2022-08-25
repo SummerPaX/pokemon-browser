@@ -99,6 +99,6 @@ export interface EvolutionTrigger {
   name: 'level-up' | 'trade' | 'use-item' | 'shed' | 'other';
   /** The name of this resource listed in different languages. */
   names: Name[];
-  /** A list of pokemon species that result from this evolution trigger. */
+  /** A list of species species that result from this evolution trigger. */
   pokemon_species: NamedAPIResource[];
 }

@@ -8,20 +8,22 @@ import { AppComponent } from './app.component';
 import { LayoutModule } from './modules/layout/layout.module';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import {MatButtonModule} from "@angular/material/button";
 @NgModule({
   declarations: [
     AppComponent,
-    
+
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatSidenavModule,
-    MatIconModule,
-    LayoutModule,
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatSidenavModule,
+        MatIconModule,
+        LayoutModule,
+        MatButtonModule,
+    ],
   providers: [],
   bootstrap: [AppComponent],
 })

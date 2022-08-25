@@ -1,48 +1,47 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {Pokemon, PokemonEntry, PokemonSpecies} from '../../../../../models';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {Observable, Subject, takeUntil} from 'rxjs';
+import {Pokemon, PokemonSpecies} from '../../../../../models';
 import {PokemonService} from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-simplepokemoncard',
   templateUrl: './simplepokemoncard.component.html',
 })
-export class SimplepokemoncardComponent implements OnInit {
-  @Input() pokemonEntry: PokemonEntry;
+export class SimplepokemoncardComponent implements OnInit, OnDestroy {
+  @Input() species!: PokemonSpecies;
+  pokemon$: Observable<Pokemon>
+  pokemon: Pokemon;
   @Input() filter: string;
   @Input() lang: string;
 
-  pokemon: Pokemon;
-  species: PokemonSpecies;
+  destroy$ = new Subject<any>();
 
-  constructor(private pokemonService: PokemonService) {}
+  constructor(private pokemonService: PokemonService) {
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next(0)
+    this.destroy$.complete()
+  }
 
   ngOnInit(): void {
-    setTimeout(() => {
-      this.pokemonService
-        .getSpezies(this.pokemonEntry.pokemon_species.url)
-        .subscribe((result) => {
-          this.species = result;
-          this.getPokemon(
-            this.species.varieties.find((entry) => entry.is_default)?.pokemon
-              .url || ''
-          );
-        });
-    }, 150 * this.pokemonEntry.entry_number);
-  }
-  getPokemon(url: string) {
-    this.pokemonService.getPokemon(url).subscribe((result) => {
-      this.pokemon = result;
-    });
+    this.pokemon$ = this.pokemonService.getPokemon(
+      this.species?.varieties.find(
+        (entry) =>
+          entry.is_default)?.pokemon || {name: '', url: ''}
+    );
+    this.pokemon$.pipe(takeUntil(this.destroy$)).subscribe(pokemon => this.pokemon = pokemon);
   }
 
-  isFiltered(): boolean {
+
+  isFiltered() {
     if (this.species) {
       let name =
         this.species.names.find(
           (entry) => entry.language.name === (this.lang || 'de')
         )?.name ?? '';
       return (
-        this.pokemon.types.find(
+        this.pokemon?.types.find(
           (type) => type.type.name === this.filter.trim().toLowerCase()
         ) !== undefined ||
         name.toLowerCase().includes(this.filter.trim().toLowerCase())
