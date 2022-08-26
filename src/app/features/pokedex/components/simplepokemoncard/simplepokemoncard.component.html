@@ -1,9 +1,9 @@
-<div class="w-72 m-1" *ngIf="pokemon && (!filter || isFiltered())">
+<div class="w-72 m-1">
   <mat-card class="">
     <mat-card-header>
-      <mat-card-title *ngIf="species">
-        #{{ species.id }}
-        {{ species | species: "name":lang || "de" }}</mat-card-title
+      <mat-card-title *ngIf="pokemon">
+        #{{ pokemon.pokedexId}}
+        {{ pokemon | species: "name":lang || "de" }}</mat-card-title
       >
     </mat-card-header>
     <img
@@ -12,9 +12,9 @@
       style="margin: 0 auto 0.5rem"
       [class]="pokemon.types[0].type.name"
       [src]="pokemon.sprites.front_default"
-      [alt]="species.id"/>
+      [alt]="pokemon.id"/>
     <mat-card-content [class]="lang == 'en' ? ' h-24' : 'h-16'">
-      <span>{{ species | species: "flavour":lang || "de" }}</span>
+      <span>{{ pokemon | species: "flavour":lang || "de" }}</span>
     </mat-card-content>
     <mat-card-actions>
       <div>

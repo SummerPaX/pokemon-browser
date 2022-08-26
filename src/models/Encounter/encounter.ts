@@ -18,7 +18,7 @@ export interface EncounterMethod {
 
 /**
  * ## Encounter Condition
- * Conditions which affect what species might appear in the wild, e.g., day or night.
+ * Conditions which affect what pokemon might appear in the wild, e.g., day or night.
  *  - Check out [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Time)
  */
 export interface EncounterCondition {

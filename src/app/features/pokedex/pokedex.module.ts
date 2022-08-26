@@ -14,6 +14,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { FormsModule } from '@angular/forms';
+import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
 
 
 @NgModule({
@@ -24,16 +25,17 @@ import { FormsModule } from '@angular/forms';
     ViewNotfoundComponent,
     SpeciesPipe,
   ],
-  imports: [
-    CommonModule,
-    PokedexRoutingModule,
-    MatCardModule,
-    MatIconModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
-    MatMenuModule,
-    FormsModule,
-  ]
+    imports: [
+        CommonModule,
+        PokedexRoutingModule,
+        MatCardModule,
+        MatIconModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatMenuModule,
+        FormsModule,
+        MatProgressSpinnerModule,
+    ]
 })
 export class PokedexModule { }

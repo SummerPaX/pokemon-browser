@@ -34,6 +34,6 @@ export interface PalParkEncounterSpecies {
   base_score: number;
   /** The base rate for encountering this Pokémon in this pal park area */
   rate: number;
-  /** The Pokémon species being encountered */
+  /** The Pokémon pokemon being encountered */
   pokemon_species: NamedAPIResource;
 }

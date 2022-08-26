@@ -2,45 +2,45 @@ import { Name, NamedAPIResource } from '../Common';
 
 /**
  * Evolution Detail
- * All details regarding the specific details of the referenced Pokémon species evolution.
+ * All details regarding the specific details of the referenced Pokémon pokemon evolution.
  */
 export interface EvolutionDetail {
-  /** The item required to cause evolution this into Pokémon species. */
+  /** The item required to cause evolution this into Pokémon pokemon. */
   item: NamedAPIResource | null;
-  /** The type of event that triggers evolution into this Pokémon species. */
+  /** The type of event that triggers evolution into this Pokémon pokemon. */
   trigger: NamedAPIResource;
-  /** The id of the gender of the evolving Pokémon species must be in order to evolve into this Pokémon species. */
+  /** The id of the gender of the evolving Pokémon pokemon must be in order to evolve into this Pokémon pokemon. */
   gender: number | null;
-  /** The item the evolving Pokémon species must be holding during the evolution trigger event to evolve into this Pokémon species. */
+  /** The item the evolving Pokémon pokemon must be holding during the evolution trigger event to evolve into this Pokémon pokemon. */
   held_item: NamedAPIResource | null;
-  /** The move that must be known by the evolving Pokémon species during the evolution trigger event in order to evolve into this Pokémon species. */
+  /** The move that must be known by the evolving Pokémon pokemon during the evolution trigger event in order to evolve into this Pokémon pokemon. */
   known_move: NamedAPIResource | null;
-  /** The evolving Pokémon species must know a move with this type during the evolution trigger event in order to evolve into this Pokémon species. */
+  /** The evolving Pokémon pokemon must know a move with this type during the evolution trigger event in order to evolve into this Pokémon pokemon. */
   known_move_type: NamedAPIResource | null;
   /** The location the evolution must be triggered at. */
   location: NamedAPIResource | null;
-  /** The minimum required level of the evolving Pokémon species to evolve into this Pokémon species. */
+  /** The minimum required level of the evolving Pokémon pokemon to evolve into this Pokémon pokemon. */
   min_level: number | null;
-  /** The minimum required level of happiness the evolving Pokémon species to evolve into this Pokémon species. */
+  /** The minimum required level of happiness the evolving Pokémon pokemon to evolve into this Pokémon pokemon. */
   min_happiness: number | null;
-  /** The minimum required level of beauty the evolving Pokémon species to evolve into this Pokémon species. */
+  /** The minimum required level of beauty the evolving Pokémon pokemon to evolve into this Pokémon pokemon. */
   min_beauty: number | null;
-  /** The minimum required level of affection the evolving Pokémon species to evolve into this Pokémon species. */
+  /** The minimum required level of affection the evolving Pokémon pokemon to evolve into this Pokémon pokemon. */
   min_affection: number | null;
-  /** Whether or not it must be raining in the overworld to cause evolution this Pokémon species. */
+  /** Whether or not it must be raining in the overworld to cause evolution this Pokémon pokemon. */
   needs_overworld_rain: boolean;
-  /** The Pokémon species that must be in the players party in order for the evolving Pokémon species to evolve into this Pokémon species. */
+  /** The Pokémon pokemon that must be in the players party in order for the evolving Pokémon pokemon to evolve into this Pokémon pokemon. */
   party_species: NamedAPIResource | null;
   /**
    * The player must have a Pokémon of this type in their party during the evolution trigger event
-   * in order for the evolving Pokémon species to evolve into this Pokémon species.
+   * in order for the evolving Pokémon pokemon to evolve into this Pokémon pokemon.
    */
   party_type: NamedAPIResource | null;
   /** The required relation between the Pokémon's Attack and Defense stats. 1 means Attack > Defense. 0 means Attack = Defense. -1 means Attack < Defense. */
   relative_physical_stats: 1 | 0 | -1 | null;
   /** The required time of day. Day or night. */
   time_of_day: 'Day' | 'Night' | '';
-  /** Pokémon species for which this one must be traded. */
+  /** Pokémon pokemon for which this one must be traded. */
   trade_species: NamedAPIResource | null;
   /** Whether or not the 3DS needs to be turned upside-down as this Pokémon levels up. */
   turn_upside_down: boolean;
@@ -54,9 +54,9 @@ export interface EvolutionDetail {
 export interface ChainLink {
   /** Whether or not this link is for a baby Pokémon. This would only ever be true on the base link */
   is_baby: boolean;
-  /** The Pokémon species at this point in the evolution chain */
+  /** The Pokémon pokemon at this point in the evolution chain */
   species: NamedAPIResource;
-  /** All details regarding the specific details of the referenced Pokémon species evolution */
+  /** All details regarding the specific details of the referenced Pokémon pokemon evolution */
   evolution_details: EvolutionDetail[];
   /** A List of chain objects */
   evolves_to: ChainLink[];
@@ -99,6 +99,6 @@ export interface EvolutionTrigger {
   name: 'level-up' | 'trade' | 'use-item' | 'shed' | 'other';
   /** The name of this resource listed in different languages. */
   names: Name[];
-  /** A list of species species that result from this evolution trigger. */
+  /** A list of pokemon pokemon that result from this evolution trigger. */
   pokemon_species: NamedAPIResource[];
 }

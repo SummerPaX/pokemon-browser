@@ -1,68 +1,86 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {ChangeDetectionStrategy, Component, Input, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
-import {catchError, concatAll, filter, from, map, Observable, of, pluck, scan, Subject, switchMap} from 'rxjs';
-import {NamedAPIResource, PokemonEntry, PokemonSpecies} from '../../../../../models';
+import {
+  catchError,
+  concatAll,
+  EMPTY,
+  filter,
+  finalize,
+  from,
+  map,
+  mergeMap,
+  Observable,
+  scan,
+  switchMap,
+  tap
+} from 'rxjs';
+import {NamedAPIResource, Pokemon, PokemonEntry, PokemonSpecies} from '../../../../../models';
 import {PokemonService} from '../../services/pokemon.service';
 
 @Component({
   selector: 'app-view-firstgen',
   templateUrl: 'pokedex-view.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PokedexViewComponent implements OnInit, OnDestroy {
+export class PokedexViewComponent implements OnInit {
   @Input() pokedexRes: NamedAPIResource;
-  destroy$ = new Subject<void>();
   lang = 'de';
+  loading: boolean = false;
+  languages = [
+    {name: 'Deutsch', code: 'de'},
+    {name: 'English', code: 'en'},
+    {name: '日本語', code: 'ja'},
+    {name: 'Japanese', code: 'ja-Hrkt'},
+    {name: 'Romaji', code: 'roomaji'},
+    {name: 'Korean', code: 'ko'},
+    {name: 'Chinese', code: 'zh-Hans'},
+    {name: 'French', code: 'fr'},
+    {name: 'Spanish', code: 'es'},
+    {name: 'Italian', code: 'it'},
+  ]
 
-  speciesList$ = this.route.paramMap.pipe(
+  constructor(private route: ActivatedRoute, private pokemonService: PokemonService) {
+  }
+
+  pokemonList$ = this.route.paramMap.pipe(
     switchMap((params) => this.pokemonService.getPokedexList().pipe(
-      map((pokedexList) => {
-        return pokedexList.find((entry) => entry.name === params.get('id')) || {name: '', url: ''}
-      }),
+      map((pokedexList) => this.getPokedexWithId(pokedexList, params.get('id'))),
       filter((val) => val.name != ''),
-      switchMap((pokedexUrl) => {
-        return this.pokemonService
-          .getPokedex(pokedexUrl)
-          .pipe(pluck('pokemon_entries'));
-      }),
-      switchMap((pokemonEntrys) => {
-        return from(
-          pokemonEntrys.map(
-            entry =>
-              this.pokemonService.getSpezies(entry.pokemon_species)
-                .pipe(
-                  catchError(_ => of(null))
-                )
-          )
-        )
-          .pipe(
-            concatAll(),
-            scan((acc: PokemonSpecies[], value) => {
-              if (value) acc.push(value)
-              return acc
-            }, []),
-          )
-      }),
+      tap(() => this.loading = true),
+      switchMap((val) => this.pokemonService.fetchPokemonEntrysFromPokedex(val)),
+      switchMap(this.spreadPokemonEntrysToObservables),
+      scan((acc: (PokemonSpecies & Pokemon & { pokedexId: number })[], value) => [...acc, value], []),
     )),
-    // tap((data) => console.log(data))
   )
 
+  getPokedexWithId(pokedexList: NamedAPIResource[], id: string | null) {
+    return pokedexList.find((entry) => entry.name === id) || {name: '', url: ''}
+  }
+
+  spreadPokemonEntrysToObservables = (pokemonEntrys: PokemonEntry[]) => {
+    return from(
+      pokemonEntrys.map(
+        entry =>
+          this.pokemonService.getSpezies(entry.pokemon_species)
+            .pipe(
+              mergeMap((species) =>
+                this.pokemonService.getPokemon(
+                  species?.varieties.find(
+                    (entry) => entry.is_default)?.pokemon || {name: '', url: ''}
+                ).pipe(
+                  map(pokemon => {
+                    return {...species, ...pokemon, pokedexId: entry.entry_number}
+                  })
+                )
+              ),
+              catchError(_ => EMPTY)
+            )
+      )).pipe(concatAll(), finalize(() => this.loading = false),);
+  }
 
   simplecards = true;
-
-  constructor(
-    private route: ActivatedRoute,
-    public pokemonService: PokemonService
-  ) {
-  }
-
   searchstring: string = '';
-
   pokedex: Observable<PokemonEntry[]>;
-
-  ngOnDestroy(): void {
-    this.destroy$.next();
-    this.destroy$.complete();
-  }
 
   ngOnInit(): void {
   }
@@ -73,5 +91,15 @@ export class PokedexViewComponent implements OnInit, OnDestroy {
 
   setLang(lang: string) {
     this.lang = lang;
+  }
+
+  filterPokemon = (pokemon: (PokemonSpecies & Pokemon & { pokedexId: number })) => {
+    const filter = this.searchstring.trim().toLowerCase();
+    const nameIncludes = (pokemon.names
+      .find((entry) => entry.language.name === (this.lang || 'de'))?.name || '')
+      .toLowerCase().includes(filter);
+    const isType = pokemon.types.find((type) => type.type.name === filter) !== undefined
+
+    return filter === '' || (nameIncludes || isType);
   }
 }

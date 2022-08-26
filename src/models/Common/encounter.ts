@@ -1,6 +1,6 @@
 import { NamedAPIResource } from './resource';
 
-/** Information of a species encounter */
+/** Information of a pokemon encounter */
 export interface Encounter {
   /** The lowest level the Pokémon could be encountered at */
   min_level: number;

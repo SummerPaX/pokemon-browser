@@ -28,6 +28,6 @@ export interface EggGroup {
     | 'no-eggs';
   /** The name of this resource listed in different languages */
   names: Name[];
-  /** A list of all Pokémon species that are members of this egg group */
+  /** A list of all Pokémon pokemon that are members of this egg group */
   pokemon_species: NamedAPIResource[];
 }

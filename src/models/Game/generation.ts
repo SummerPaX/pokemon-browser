@@ -19,7 +19,7 @@ export interface Generation {
   main_region: NamedAPIResource;
   /** A list of moves that were introduced in this generation */
   moves: NamedAPIResource[];
-  /** A list of Pokémon species that were introduced in this generation */
+  /** A list of Pokémon pokemon that were introduced in this generation */
   pokemon_species: NamedAPIResource[];
   /** A list of types that were introduced in this generation */
   types: NamedAPIResource[];

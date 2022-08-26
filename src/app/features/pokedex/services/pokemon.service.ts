@@ -1,58 +1,37 @@
 import {HttpClient, HttpParams} from '@angular/common/http';
 import {Injectable} from '@angular/core';
-import {Observable, pluck, share} from 'rxjs';
-import {
-  NamedAPIResource,
-  Pokedex,
-  Pokemon,
-  PokemonSpecies,
-} from '../../../../models';
-import {PokedexResponse, PokemonResponse} from '../../../../types/pokemon-response';
+import {Observable, pluck, ReplaySubject, tap} from 'rxjs';
+import {NamedAPIResource, Pokedex, Pokemon, PokemonSpecies,} from '../../../../models';
+import {PokedexResponse} from '../../../../types/pokemon-response';
 
 @Injectable({
   providedIn: 'root',
 })
 export class PokemonService {
-  private API_ROOT: string = 'https://pokeapi.co/api/v2';
-  pokedexResponse: Observable<NamedAPIResource[]> | undefined = undefined;
+  pokedexListRequest$ = this.http.get<PokedexResponse>(
+    'https://pokeapi.co/api/v2/pokedex',
+    {
+      params: new HttpParams().set('limit', 50),
+    });
+  pokedexResponse$ = new ReplaySubject<NamedAPIResource[]>(1);
 
   constructor(private http: HttpClient) {
-  }
-
-  getPokemons() {
-    let params: HttpParams = new HttpParams()
-      .set('offset', 241)
-      .append('limit', 151);
-    console.log(this.API_ROOT + '/species', {params});
-    return this.http.get<PokemonResponse>(this.API_ROOT + '/pokemon', {
-      params,
-    }).pipe(share());
+    this.pokedexListRequest$.pipe(pluck('results')).subscribe(this.pokedexResponse$)
   }
 
   getPokedexList(): Observable<NamedAPIResource[]> {
-
-    let params: HttpParams = new HttpParams().set('limit', 50);
-    // console.log(this.API_ROOT + '/pokedex', {params});
-    if (!this.pokedexResponse)
-      this.pokedexResponse = this.http
-        .get<PokedexResponse>(this.API_ROOT + '/pokedex', {
-          params,
-        })
-        .pipe(pluck('results'));
-
-    return this.pokedexResponse
+    return this.pokedexResponse$.asObservable()
   }
 
-  getPokedex(url: NamedAPIResource) {
-    return this.http.get<Pokedex>(url.url);
+  fetchPokemonEntrysFromPokedex(entry: NamedAPIResource) {
+    return this.http.get<Pokedex>(entry.url).pipe(tap(console.log),pluck('pokemon_entries'));
   }
 
-  getPokemon(url: NamedAPIResource): Observable<Pokemon> {
-    console.log(url)
-    return this.http.get<Pokemon>(url.url);
+  getPokemon(entry: NamedAPIResource): Observable<Pokemon> {
+    return this.http.get<Pokemon>(entry.url);
   }
 
-  getSpezies(url: NamedAPIResource): Observable<PokemonSpecies> {
-    return this.http.get<PokemonSpecies>(url.url);
+  getSpezies(entry: NamedAPIResource): Observable<PokemonSpecies> {
+    return this.http.get<PokemonSpecies>(entry.url);
   }
 }

@@ -16,9 +16,11 @@ export class SidebarComponent implements OnInit {
 
   @Output() close = new EventEmitter();
 
+  pokedexList$ = this.pokemonService.getPokedexList()
+
   constructor(public pokemonService: PokemonService) {}
 
   ngOnInit(): void {
-    this.pokemonService.getPokedexList();
   }
+
 }

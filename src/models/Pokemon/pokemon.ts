@@ -12,8 +12,8 @@ import {
  * ## Pokemon
  * Pokémon are the creatures that inhabit the world of the Pokémon games.
  * They can be caught using Pokéballs and trained by battling with other Pokémon.
- * Each Pokémon belongs to a specific species but may take on a variant
- * which makes it differ from other Pokémon of the same species, such as base stats, available abilities and typings.
+ * Each Pokémon belongs to a specific pokemon but may take on a variant
+ * which makes it differ from other Pokémon of the same pokemon, such as base stats, available abilities and typings.
  * - See [Bulbapedia](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)) for greater detail.
  */
 export interface Pokemon {
@@ -25,7 +25,7 @@ export interface Pokemon {
   base_experience: number;
   /** The height of this Pokémon in decimetres */
   height: number;
-  /** Set for exactly one Pokémon used as the default for each species */
+  /** Set for exactly one Pokémon used as the default for each pokemon */
   is_default: boolean;
   /** Order for sorting. Almost national order, except families are grouped together */
   order: number;
@@ -47,7 +47,7 @@ export interface Pokemon {
    * A visual representation of the various sprites can be found at [PokeAPI/sprites](https://github.com/PokeAPI/sprites#sprites)
    */
   sprites: PokemonSprites;
-  /** The species this Pokémon belongs to */
+  /** The pokemon this Pokémon belongs to */
   species: NamedAPIResource;
   /** A list of base stat values for this Pokémon */
   stats: PokemonStat[];
@@ -63,7 +63,7 @@ export interface Pokemon {
 export interface PokemonAbility {
   /** Whether or not this is a hidden ability */
   is_hidden: boolean;
-  /** The slot this ability occupies in this Pokémon species */
+  /** The slot this ability occupies in this Pokémon pokemon */
   slot: number;
   /** The ability the Pokémon may have */
   ability: NamedAPIResource;
@@ -586,14 +586,14 @@ export interface PokemonColor {
     | 'yellow';
   /** The name of this resource listed in different languages */
   names: Name[];
-  /** A list of the Pokémon species that have this color */
+  /** A list of the Pokémon pokemon that have this color */
   pokemon_species: NamedAPIResource[];
 }
 
 /**
  * ## Pokemon Form
  * Some Pokémon may appear in one of multiple, visually different forms.
- * These differences are purely cosmetic. For variations within a Pokémon species,
+ * These differences are purely cosmetic. For variations within a Pokémon pokemon,
  * which do differ in more than just visuals, the 'Pokémon' entity is used to represent such a variety.
  */
 export interface PokemonForm {
@@ -605,7 +605,7 @@ export interface PokemonForm {
    * Multiple forms may have equal order, in which case they should fall back on sorting by name
    */
   order: number;
-  /** The order in which forms should be sorted within a species' forms */
+  /** The order in which forms should be sorted within a pokemon' forms */
   form_order: number;
   /** True for exactly one form used as the default for each Pokémon */
   is_default: boolean;
@@ -672,7 +672,7 @@ export interface PokemonHabitat {
     | 'waters-edge';
   /** The name of this resource listed in different languages */
   names: Name[];
-  /** A list of the Pokémon species that can be found in this habitat */
+  /** A list of the Pokémon pokemon that can be found in this habitat */
   pokemon_species: NamedAPIResource[];
 }
 
@@ -689,7 +689,7 @@ export interface PokemonShape {
   awesome_names: AwesomeName[];
   /** The name of this resource listed in different languages */
   names: Name[];
-  /** A list of the Pokémon species that have this shape */
+  /** A list of the Pokémon pokemon that have this shape */
   pokemon_species: NamedAPIResource[];
 }
 
@@ -706,15 +706,15 @@ export interface AwesomeName {
 /**
  * ## Pokemon Species
  * A Pokémon Species forms the basis for at least one Pokémon.
- * Attributes of a Pokémon species are shared across all varieties of Pokémon within the species.
- * A good example is Wormadam; Wormadam is the species which can be found in three different varieties,
+ * Attributes of a Pokémon pokemon are shared across all varieties of Pokémon within the pokemon.
+ * A good example is Wormadam; Wormadam is the pokemon which can be found in three different varieties,
  * Wormadam-Trash, Wormadam-Sandy and Wormadam-Plant */
 export interface PokemonSpecies {
   /** The identifier for this resource */
   id: number;
   /** The name for this resource */
   name: string;
-  /** The order in which species should be sorted. Based on National Dex order, except families are grouped together and sorted by stage */
+  /** The order in which pokemon should be sorted. Based on National Dex order, except families are grouped together and sorted by stage */
   order: number;
   /** The chance of this Pokémon being female, in eighths; or -1 for genderless */
   gender_rate: number;
@@ -734,58 +734,58 @@ export interface PokemonSpecies {
   has_gender_differences: boolean;
   /** Whether or not this Pokémon has multiple forms and can switch between them */
   forms_switchable: boolean;
-  /** The rate at which this Pokémon species gains levels */
+  /** The rate at which this Pokémon pokemon gains levels */
   growth_rate: NamedAPIResource;
-  /** A list of Pokedexes and the indexes reserved within them for this Pokémon species */
+  /** A list of Pokedexes and the indexes reserved within them for this Pokémon pokemon */
   pokedex_numbers: PokemonSpeciesDexEntry[];
-  /** A list of egg groups this Pokémon species is a member of */
+  /** A list of egg groups this Pokémon pokemon is a member of */
   egg_groups: NamedAPIResource[];
   /** The color of this Pokémon for Pokédex search */
   color: NamedAPIResource;
   /** The shape of this Pokémon for Pokédex search */
   shape: NamedAPIResource;
-  /** The Pokémon species that evolves into this Pokemon_species */
+  /** The Pokémon pokemon that evolves into this Pokemon_species */
   evolves_from_species: NamedAPIResource;
-  /** The evolution chain this Pokémon species is a member of */
+  /** The evolution chain this Pokémon pokemon is a member of */
   evolution_chain: APIResource;
-  /** The habitat this Pokémon species can be encountered in */
+  /** The habitat this Pokémon pokemon can be encountered in */
   habitat: NamedAPIResource;
-  /** The generation this Pokémon species was introduced in */
+  /** The generation this Pokémon pokemon was introduced in */
   generation: NamedAPIResource;
   /** The name of this resource listed in different languages */
   names: Name[];
-  /** A list of encounters that can be had with this Pokémon species in pal park */
+  /** A list of encounters that can be had with this Pokémon pokemon in pal park */
   pal_park_encounters: PalParkEncounterArea[];
-  /** A list of flavor text entries for this Pokémon species */
+  /** A list of flavor text entries for this Pokémon pokemon */
   flavor_text_entries: FlavorText[];
-  /** Descriptions of different forms Pokémon take on within the Pokémon species */
+  /** Descriptions of different forms Pokémon take on within the Pokémon pokemon */
   form_descriptions: Description[];
-  /** The genus of this Pokémon species listed in multiple languages */
+  /** The genus of this Pokémon pokemon listed in multiple languages */
   genera: Genus[];
-  /** A list of the Pokémon that exist within this Pokémon species */
+  /** A list of the Pokémon that exist within this Pokémon pokemon */
   varieties: PokemonSpeciesVariety[];
 }
 
 /**
- * The genus of the given Pokémon species listed in multiple languages
+ * The genus of the given Pokémon pokemon listed in multiple languages
  */
 export interface Genus {
-  /** The localized genus for the referenced Pokémon species */
+  /** The localized genus for the referenced Pokémon pokemon */
   genus: string;
   /** The language this genus is in */
   language: NamedAPIResource;
 }
 
-/** Pokedexes and the indexes reserved within them for the given Pokémon species */
+/** Pokedexes and the indexes reserved within them for the given Pokémon pokemon */
 export interface PokemonSpeciesDexEntry {
   /** The index number within the Pokédex */
   entry_number: number;
-  /** The Pokédex the referenced Pokémon species can be found in */
+  /** The Pokédex the referenced Pokémon pokemon can be found in */
   pokedex: NamedAPIResource;
 }
 
 /**
- * Encounter that can be had with the given Pokémon species in pal park
+ * Encounter that can be had with the given Pokémon pokemon in pal park
  */
 export interface PalParkEncounterArea {
   /** The base score given to the player when the referenced Pokémon is caught during a pal park run */
@@ -797,7 +797,7 @@ export interface PalParkEncounterArea {
 }
 
 /**
- * Pokémons that exist within this Pokémon species
+ * Pokémons that exist within this Pokémon pokemon
  */
 export interface PokemonSpeciesVariety {
   /** Whether this variety is the default variety */

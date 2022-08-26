@@ -11,18 +11,18 @@ export interface Gender {
   id: number;
   /** The name for this resource */
   name: 'male' | 'female' | 'genderless';
-  /** A list of Pokémon species that can be this gender and how likely it is that they will be */
+  /** A list of Pokémon pokemon that can be this gender and how likely it is that they will be */
   pokemon_species_details: PokemonSpeciesGender[];
-  /** A list of Pokémon species that required this gender in order for a Pokémon to evolve into them */
+  /** A list of Pokémon pokemon that required this gender in order for a Pokémon to evolve into them */
   required_for_evolution: NamedAPIResource[];
 }
 
 /**
- * Pokémon species that can be this gender and how likely it is that they will be
+ * Pokémon pokemon that can be this gender and how likely it is that they will be
  */
 export interface PokemonSpeciesGender {
   /** The chance of this Pokémon being female, in eighths; or -1 for genderless */
   rate: number;
-  /** A Pokémon species that can be the referenced gender */
+  /** A Pokémon pokemon that can be the referenced gender */
   pokemon_species: NamedAPIResource;
 }

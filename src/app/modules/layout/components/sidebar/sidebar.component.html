@@ -1,7 +1,7 @@
 <mat-selection-list class="" [multiple]="false">
   <h1 class="">Pokedex</h1>
   <mat-list-option
-    *ngFor="let entry of pokemonService.pokedexResponse | async"
+    *ngFor="let entry of pokedexList$ | async"
     [routerLink]="['pokedex', entry.name]"
     routerLinkActive="router-link-active"
     (click)="close.emit()"
