@@ -1,8 +1,13 @@
 # PokemonBrowser
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
+## About
+
+Visualize every Pokedex in a neat Dashboard. Shows each Pokemon with their Entry Number and Discription.
+
 
 ## Development server
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
