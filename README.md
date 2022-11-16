@@ -2,7 +2,7 @@
 
 ## About
 
-Visualize every Pokedex in a neat Dashboard. Shows each Pokemon with their Entry Number and Discription.
+Visualize every Pokedex in a neat Dashboard. Shows each Pokemon with their Entry Number and Description.
 
 
 ## Development server
